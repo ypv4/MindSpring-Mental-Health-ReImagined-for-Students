@@ -54,7 +54,7 @@ function sanitizePath(urlPath) {
     return "index.html";
   }
 
-  // Remove leading slashes and block parent traversal segments.
+  
   let cleaned = slashNormalized.replace(/^\/+/, "");
   cleaned = cleaned.replace(/(^|\/)\.\.(?=\/|$)/g, "");
 
@@ -66,7 +66,7 @@ function sanitizePath(urlPath) {
     cleaned += "index.html";
   }
 
-  // Support clean routes like /services in addition to /services.html.
+  
   if (!path.extname(cleaned)) {
     const knownPages = new Set(["index", "services", "about", "resources", "contact"]);
     const normalizedPage = cleaned.toLowerCase();
