@@ -1,0 +1,9 @@
+﻿{
+  "name": "mindspring-student-wellness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Student mental healthcare platform built with HTML, CSS, Bootstrap 5, vanilla JavaScript, and a lightweight Node server.",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

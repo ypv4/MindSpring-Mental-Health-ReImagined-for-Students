@@ -1,0 +1,148 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MindSpring mental health platform for students.">
+  <title>MindSpring | Mental Health Reimagined for Students</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="home">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light student-nav" aria-label="Primary navigation">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <span class="brand-mark">◡</span>
+          <span class="brand-text">tbh</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="audienceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Audience</a>
+              <ul class="dropdown-menu" aria-labelledby="audienceDropdown">
+                <li><a class="dropdown-item" href="#">K12</a></li>
+                <li><a class="dropdown-item" href="#">Higher Ed</a></li>
+                <li><a class="dropdown-item" href="#">Families</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a>
+              <ul class="dropdown-menu" aria-labelledby="pageDropdown">
+                <li><a class="dropdown-item js-page-link" data-nav="home" href="index.html">Home</a></li>
+                <li><a class="dropdown-item js-page-link" data-nav="services" href="services.html">Services</a></li>
+                <li><a class="dropdown-item js-page-link" data-nav="about" href="about.html">Mission</a></li>
+                <li><a class="dropdown-item js-page-link" data-nav="resources" href="resources.html">Resources</a></li>
+                <li><a class="dropdown-item js-page-link" data-nav="contact" href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link js-page-link" href="services.html">Enterprise</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-login px-4" href="contact.html">Login</a></li>
+            <li class="nav-item"><a class="btn btn-join px-4 js-page-link" href="contact.html">Join now</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h1 class="hero-title">Mental health,<br>reimagined for <span class="brush-word">students</span></h1>
+            <p class="hero-copy">Helping your students succeed and thrive with the support of licensed therapists and a welcoming peer community.</p>
+            <div class="d-flex gap-2 flex-wrap">
+              <a class="btn btn-orange btn-lg px-4 js-page-link" href="contact.html">Join now</a>
+              <a class="btn btn-login btn-lg px-4 js-page-link" href="services.html">Explore support</a>
+            </div>
+
+            <div class="support-toggle mt-4" aria-live="polite">
+              <p class="mb-2 fw-semibold">Need help today?</p>
+              <button class="btn btn-orange btn-sm" id="supportToggle" type="button">Toggle instant support status</button>
+              <p class="small text-muted mt-2 mb-0" id="supportStatus">Live peer chat opens daily from 8 AM to 11 PM.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-collage" aria-hidden="true">
+              <div class="collage-card one"><img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=60" alt=""></div>
+              <div class="collage-card two"><img src="https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?auto=format&fit=crop&w=900&q=60" alt=""></div>
+              <div class="collage-card three"><img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=60" alt=""></div>
+              <span class="doodle one">💬</span>
+              <span class="doodle two">↺</span>
+              <span class="doodle three">☻</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5">
+      <div class="container">
+        <div class="trusted-wrap">
+          <p class="trusted-label">Trusted by students at over 100 schools</p>
+          <div class="row g-2">
+            <div class="col-6 col-md"><div class="logo-pill">Boston College</div></div>
+            <div class="col-6 col-md"><div class="logo-pill">Drexel</div></div>
+            <div class="col-6 col-md"><div class="logo-pill">Northwestern</div></div>
+            <div class="col-6 col-md"><div class="logo-pill">UC Davis</div></div>
+            <div class="col-12 col-md"><div class="logo-pill">WashU</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5">
+      <div class="container">
+        <p class="section-tag">One platform, multiple touchpoints.</p>
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-5">
+            <article class="highlight-panel h-100">
+              <h2 class="section-title mb-3">We support students, no matter what they are dealing with.</h2>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item ps-0"><strong class="text-dark">Personalized, therapist-led support groups:</strong> 5-10 students, clinician-led, 6-10 weeks.</li>
+                <li class="list-group-item ps-0"><strong class="text-dark">1:1 check-ins:</strong> culturally responsive support for real student life.</li>
+                <li class="list-group-item ps-0"><strong class="text-dark">Real-time SMS support:</strong> quick check-ins between sessions.</li>
+              </ul>
+              <a class="btn btn-orange mt-3 js-page-link" href="services.html">See all services</a>
+            </article>
+          </div>
+          <div class="col-lg-7">
+            <article class="mock-screen h-100">
+              <div class="screen-inner">
+                <div class="screen-grid">
+                  <div class="screen-cell one"></div>
+                  <div class="screen-cell two"></div>
+                  <div class="screen-cell three"></div>
+                  <div class="screen-cell four"></div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-shell">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p class="mb-0">© 2026 MindSpring Student Wellness Platform</p>
+      <p class="mb-0">Support that meets students where they are.</p>
+    </div>
+  </footer>
+
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

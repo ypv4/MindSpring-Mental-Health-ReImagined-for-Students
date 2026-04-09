@@ -1,0 +1,122 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MindSpring sign-up and contact page for student support.">
+  <title>MindSpring | Contact & Sign-up</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light student-nav" aria-label="Primary navigation">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><span class="brand-mark">◡</span><span class="brand-text">tbh</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="audienceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Audience</a><ul class="dropdown-menu" aria-labelledby="audienceDropdown"><li><a class="dropdown-item" href="#">K12</a></li><li><a class="dropdown-item" href="#">Higher Ed</a></li><li><a class="dropdown-item" href="#">Families</a></li></ul></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a><ul class="dropdown-menu" aria-labelledby="pageDropdown"><li><a class="dropdown-item js-page-link" data-nav="home" href="index.html">Home</a></li><li><a class="dropdown-item js-page-link" data-nav="services" href="services.html">Services</a></li><li><a class="dropdown-item js-page-link" data-nav="about" href="about.html">Mission</a></li><li><a class="dropdown-item js-page-link" data-nav="resources" href="resources.html">Resources</a></li><li><a class="dropdown-item js-page-link" data-nav="contact" href="contact.html">Contact</a></li></ul></li>
+            <li class="nav-item"><a class="nav-link js-page-link" href="services.html">Enterprise</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-login px-4" href="contact.html">Login</a></li>
+            <li class="nav-item"><a class="btn btn-join px-4 js-page-link" href="contact.html">Join now</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="py-5">
+    <section class="container mb-4">
+      <p class="section-tag">Contact + sign-up</p>
+      <h1 class="section-title mb-2">Let’s get your students connected to support.</h1>
+      <p class="section-copy">Tell us about your campus or personal goals. We’ll help you find the right care pathway and get started quickly.</p>
+    </section>
+
+    <section class="container">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <article class="contact-card">
+            <h2 class="h4 mb-3">Start your sign-up</h2>
+            <form id="signupForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" name="fullName" required>
+                  <div class="invalid-feedback" id="fullNameError"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="emailAddress" class="form-label">Email Address</label>
+                  <input type="email" class="form-control" id="emailAddress" name="emailAddress" required>
+                  <div class="invalid-feedback" id="emailAddressError"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="schoolName" class="form-label">School or University</label>
+                  <input type="text" class="form-control" id="schoolName" name="schoolName" required>
+                  <div class="invalid-feedback" id="schoolNameError"></div>
+                </div>
+                <div class="col-md-6">
+                  <label for="roleType" class="form-label">I am a...</label>
+                  <select class="form-select" id="roleType" name="roleType" required>
+                    <option value="">Choose one</option>
+                    <option value="student">Student</option>
+                    <option value="staff">Counselor/Staff</option>
+                    <option value="partner">Campus Partner</option>
+                  </select>
+                  <div class="invalid-feedback" id="roleTypeError"></div>
+                </div>
+                <div class="col-12">
+                  <label for="helpTopic" class="form-label">What support are you looking for?</label>
+                  <textarea class="form-control" id="helpTopic" name="helpTopic" rows="4" required></textarea>
+                  <div class="invalid-feedback" id="helpTopicError"></div>
+                </div>
+                <div class="col-12 form-check ms-1">
+                  <input class="form-check-input" type="checkbox" id="consentCheck" required>
+                  <label class="form-check-label" for="consentCheck">I agree to be contacted about MindSpring support options.</label>
+                  <div class="invalid-feedback d-block" id="consentCheckError"></div>
+                </div>
+              </div>
+              <div class="d-flex gap-2 align-items-center mt-3">
+                <button class="btn btn-orange" type="submit">Submit request</button>
+                <span id="signupStatus" class="small" aria-live="polite"></span>
+              </div>
+            </form>
+          </article>
+        </div>
+
+        <div class="col-lg-5">
+          <article class="highlight-panel h-100">
+            <h2 class="h5">What happens next?</h2>
+            <ol class="ps-3 text-muted mb-4">
+              <li>We review your request within one business day.</li>
+              <li>We match you with the right program option.</li>
+              <li>We share onboarding and scheduling details.</li>
+            </ol>
+            <div class="p-3 rounded" style="background: var(--bg-green-soft); border: 1px solid var(--line-soft);">
+              <p class="fw-semibold mb-1">Student first, always.</p>
+              <p class="small mb-0 text-muted">No pressure. No clinical jargon. Just clear support that works in real student life.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-shell">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p class="mb-0">MindSpring Contact</p>
+      <a class="text-decoration-none text-muted js-page-link" href="resources.html">Browse resources first</a>
+    </div>
+  </footer>
+
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+

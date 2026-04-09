@@ -1,0 +1,97 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MindSpring student mental health resources.">
+  <title>MindSpring | Resources</title>
+  <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="resources">
+  <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light student-nav" aria-label="Primary navigation">
+      <div class="container py-2">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><span class="brand-mark">◡</span><span class="brand-text">tbh</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="audienceDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Audience</a><ul class="dropdown-menu" aria-labelledby="audienceDropdown"><li><a class="dropdown-item" href="#">K12</a></li><li><a class="dropdown-item" href="#">Higher Ed</a></li><li><a class="dropdown-item" href="#">Families</a></li></ul></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="pageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Explore</a><ul class="dropdown-menu" aria-labelledby="pageDropdown"><li><a class="dropdown-item js-page-link" data-nav="home" href="index.html">Home</a></li><li><a class="dropdown-item js-page-link" data-nav="services" href="services.html">Services</a></li><li><a class="dropdown-item js-page-link" data-nav="about" href="about.html">Mission</a></li><li><a class="dropdown-item js-page-link" data-nav="resources" href="resources.html">Resources</a></li><li><a class="dropdown-item js-page-link" data-nav="contact" href="contact.html">Contact</a></li></ul></li>
+            <li class="nav-item"><a class="nav-link js-page-link" href="contact.html">Enterprise</a></li>
+            <li class="nav-item ms-lg-2"><a class="btn btn-login px-4" href="contact.html">Login</a></li>
+            <li class="nav-item"><a class="btn btn-join px-4 js-page-link" href="contact.html">Join now</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="py-5">
+    <section class="container mb-4">
+      <p class="section-tag">Interactive mental health library</p>
+      <h1 class="section-title mb-2">Resources students can actually use.</h1>
+      <p class="section-copy">Browse short, practical content built for exam stress, homesickness, burnout, social anxiety, and everyday life transitions.</p>
+    </section>
+
+    <section class="container mb-4">
+      <div class="resource-controls">
+        <div class="row g-2 align-items-center">
+          <div class="col-lg-6">
+            <div class="btn-group flex-wrap" role="group" aria-label="Resource category filters">
+              <button type="button" class="btn btn-filter resource-filter-btn active" data-filter="all">All</button>
+              <button type="button" class="btn btn-filter resource-filter-btn" data-filter="stress">Stress</button>
+              <button type="button" class="btn btn-filter resource-filter-btn" data-filter="focus">Focus</button>
+              <button type="button" class="btn btn-filter resource-filter-btn" data-filter="relationships">Relationships</button>
+              <button type="button" class="btn btn-filter resource-filter-btn" data-filter="sleep">Sleep</button>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <label for="resourceSearch" class="visually-hidden">Search resources</label>
+            <input id="resourceSearch" type="search" class="form-control" placeholder="Search resources (e.g., finals, burnout, roommates)">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="row g-3" id="resourceGrid">
+        <div class="col-md-6 col-xl-4" data-category="stress"><article class="resource-card" tabindex="0" data-title="Calm Before Exams" data-detail="A 12-minute reset routine with breathing, body grounding, and thought reframing techniques for exam week."><span class="resource-tag">Stress</span><h2 class="h6 mt-2">Calm Before Exams</h2><p class="small text-muted mb-0">Audio + checklist to reduce pre-test panic.</p></article></div>
+        <div class="col-md-6 col-xl-4" data-category="focus"><article class="resource-card" tabindex="0" data-title="Focus Sprint Framework" data-detail="A repeatable method for 25-minute focus blocks, distraction resets, and post-session reflection."><span class="resource-tag">Focus</span><h2 class="h6 mt-2">Focus Sprint Framework</h2><p class="small text-muted mb-0">Build concentration in short sessions.</p></article></div>
+        <div class="col-md-6 col-xl-4" data-category="relationships"><article class="resource-card" tabindex="0" data-title="Roommate Conflict Playbook" data-detail="Scripts and boundaries for hard conversations, with examples for shared spaces and study priorities."><span class="resource-tag">Relationships</span><h2 class="h6 mt-2">Roommate Conflict Playbook</h2><p class="small text-muted mb-0">Set boundaries without guilt.</p></article></div>
+        <div class="col-md-6 col-xl-4" data-category="sleep"><article class="resource-card" tabindex="0" data-title="Sleep Reset in 7 Nights" data-detail="A gradual evening routine to improve sleep timing, cut screen spirals, and wake up with more energy."><span class="resource-tag">Sleep</span><h2 class="h6 mt-2">Sleep Reset in 7 Nights</h2><p class="small text-muted mb-0">Simple plan for better rest.</p></article></div>
+        <div class="col-md-6 col-xl-4" data-category="stress"><article class="resource-card" tabindex="0" data-title="Burnout Early Warning Signs" data-detail="How to recognize burnout before a crash and what to do in the first 48 hours."><span class="resource-tag">Stress</span><h2 class="h6 mt-2">Burnout Early Warning Signs</h2><p class="small text-muted mb-0">Spot patterns and recover faster.</p></article></div>
+        <div class="col-md-6 col-xl-4" data-category="focus"><article class="resource-card" tabindex="0" data-title="Study Anxiety Toolkit" data-detail="Micro-tools to manage perfectionism, procrastination, and self-criticism during intensive semesters."><span class="resource-tag">Focus</span><h2 class="h6 mt-2">Study Anxiety Toolkit</h2><p class="small text-muted mb-0">Practical support for heavy workloads.</p></article></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="resourceModal" tabindex="-1" aria-labelledby="resourceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5 mb-0" id="resourceModalLabel">Resource details</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="resourceModalBody"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-shell">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+      <p class="mb-0">MindSpring Resources</p>
+      <a class="text-decoration-none text-muted js-page-link" href="contact.html">Join for full library access</a>
+    </div>
+  </footer>
+
+  <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
